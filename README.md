@@ -12,7 +12,7 @@ Naas Auth Proxy provides the following features:
 
 ## Setup and Run
 
-Clone the repo and install dependencies/packages:
+Clone the repo and install dependencies / packages:
 
 `$ npm install`
 
