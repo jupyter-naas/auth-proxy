@@ -21,13 +21,13 @@ ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils
 
 RUN npm install
 
-ENV NODE_PATH="/usr/local/share/.config/yarn/global/node_modules:${NODE_PATH}"
+# ENV NODE_PATH="/usr/local/share/.config/yarn/global/node_modules:${NODE_PATH}"
 
-ENV PATH="/tools:${PATH}"
+# ENV PATH="/tools:${PATH}"
 
-RUN groupadd -r pptruser && useradd -r -g pptruser -G audio,video pptruser
+# RUN groupadd -r pptruser && useradd -r -g pptruser -G audio,video pptruser
 
-COPY --chown=pptruser:pptruser ./tools /tools
+# COPY --chown=pptruser:pptruser ./tools /tools
 
 EXPOSE 3000
 CMD ["node","--es-module-specifier-resolution=node","src/index"]
