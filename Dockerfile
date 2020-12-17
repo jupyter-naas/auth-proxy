@@ -10,7 +10,14 @@ RUN  apt-get update \
      && wget --quiet https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh -O /usr/sbin/wait-for-it.sh \
      && chmod +x /usr/sbin/wait-for-it.sh
 
-ADD package.json package-lock.json /
-RUN npm install
+RUN mkdir -p /app
+WORKDIR /app
+
+# install dependency
+COPY package*.json /app/
+RUN npm i
+
+# install server
+COPY src /app/src
 
 CMD ["node","--experimental-modules", "--es-module-specifier-resolution=node","src/index"]
