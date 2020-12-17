@@ -27,7 +27,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       && echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories \
       \
       # Add the packages
-    #   && apk add --no-cache dumb-init curl make gcc g++ python linux-headers binutils-gold gnupg libstdc++ nss chromium \
+      && apk add --no-cache dumb-init curl make gcc g++ python linux-headers binutils-gold gnupg libstdc++ nss chromium \
     #   \
       && npm install puppeteer
 
