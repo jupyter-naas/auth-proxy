@@ -1,2 +1,3 @@
 export PORT=3000
-npx nodemon --es-module-specifier-resolution=node src/index
+npx nodemon --experimental-modules \
+  --es-module-specifier-resolution=node \ src/index
