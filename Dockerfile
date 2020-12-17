@@ -11,7 +11,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
     org.label-schema.vendor="Cashstory, Inc." \
     org.label-schema.version=$VERSION \
     org.label-schema.schema-version="1.0"
-RUN apk add --no-cache gconf-service libasound2 
+RUN apk add --no-cache gconf-service 
 
 RUN npm install
 
