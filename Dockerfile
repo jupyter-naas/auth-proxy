@@ -13,14 +13,6 @@ apt-get clean && apt-get autoremove -y && rm -rf /var/lib/apt/lists/*
 
 RUN yarn global add puppeteer@1.20.0 && yarn cache clean
 
-ENV NODE_PATH="/usr/local/share/.config/yarn/global/node_modules:${NODE_PATH}"
-
-ENV PATH="/tools:${PATH}"
-
-RUN groupadd -r pptruser && useradd -r -g pptruser -G audio,video pptruser
-
-COPY --chown=pptruser:pptruser ./tools /tools
-
 # Set language to UTF8
 ENV LANG="C.UTF-8"
 
