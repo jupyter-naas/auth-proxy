@@ -38,7 +38,7 @@
     "sqlite3": "^5.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.12.8",
+    "@babel/cli": "^7.12.17",
     "@babel/core": "^7.12.9",
     "babel-cli": "^6.26.0",
     "nodemon": "^2.0.6"
