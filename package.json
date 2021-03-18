@@ -33,7 +33,7 @@
     "pg-hstore": "^2.3.3",
     "puppeteer": "^5.5.0",
     "puppeteer-core": "^5.5.0",
-    "query-string": "^6.13.2",
+    "query-string": "^6.14.0",
     "sequelize": "^6.3.5",
     "sqlite3": "^5.0.0"
   },
