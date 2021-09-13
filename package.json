@@ -27,7 +27,7 @@
     "http-error-pages": "^2.0.1",
     "js-base64": "^3.6.0",
     "morgan": "^1.10.0",
-    "n": "^6.7.1",
+    "n": "^7.4.1",
     "object-to-querystring": "^1.0.8",
     "pg": "^8.4.2",
     "pg-hstore": "^2.3.3",
