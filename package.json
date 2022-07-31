@@ -31,8 +31,8 @@
     "object-to-querystring": "^1.0.8",
     "pg": "^8.4.2",
     "pg-hstore": "^2.3.3",
-    "puppeteer": "^5.5.0",
-    "puppeteer-core": "^5.5.0",
+    "puppeteer": "^13.3.0",
+    "puppeteer-core": "^13.3.0",
     "query-string": "^6.13.2",
     "sequelize": "^6.3.5",
     "sqlite3": "^5.0.0"
